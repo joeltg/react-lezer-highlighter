@@ -19,7 +19,7 @@ const parsers = {
 	json: jsonParser,
 }
 
-const code = `function foo(a, b) {
+const source = `function foo(a, b) {
 	return a + b
 }
 `
