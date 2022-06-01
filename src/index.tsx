@@ -1,11 +1,11 @@
-import React, { createContext, useContext } from "react"
+import React from "react"
 
 import { fromLezer } from "hast-util-from-lezer"
 import { toH } from "hast-to-hyperscript"
 
 import type { LRParser } from "@lezer/lr"
 
-export const Parsers = createContext<Record<string, LRParser>>({})
+export const Parsers = React.createContext<Record<string, LRParser>>({})
 
 export interface CodeProps {
 	language?: string
@@ -13,7 +13,7 @@ export interface CodeProps {
 }
 
 export const Code: React.FC<CodeProps> = (props) => {
-	const parsers = useContext(Parsers)
+	const parsers = React.useContext(Parsers)
 	if (props.language !== undefined && props.language in parsers) {
 		const parser = parsers[props.language]
 		const tree = parser.parse(props.source)
