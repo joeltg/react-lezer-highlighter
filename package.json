@@ -1,0 +1,32 @@
+{
+	"name": "react-lezer-highlighter",
+	"version": "0.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joeltg/react-lezer-highlighter.git"
+	},
+	"author": "Joel Gustafson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/joeltg/react-lezer-highlighter/issues"
+	},
+	"homepage": "https://github.com/joeltg/react-lezer-highlighter#readme",
+	"dependencies": {
+		"@lezer/lr": "^0.16.3",
+		"hast-to-hyperscript": "^10.0.1",
+		"hast-util-from-lezer": "^0.4.0"
+	},
+	"devDependencies": {
+		"typescript": "^4.7.2"
+	},
+	"peerDependencies": {
+		"@types/react": "^18.0.10",
+		"react": "^18.1.0"
+	}
+}
