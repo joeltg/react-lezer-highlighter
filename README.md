@@ -5,10 +5,18 @@ import React from "react"
 import { createRoot } from "react-dom/client"
 
 import { Code, Parsers } from "react-lezer-highlighter"
+
 import { parser as javascriptParser } from "@lezer/javascript"
+import { parser as jsonParser } from "@lezer/json"
+
+import "react-lezer-highlighter/styles/default.css"
 
 const parsers = {
-	javascript: javascriptParser,
+	js: javascriptParser,
+	jsx: javascriptParser.configure({ dialects: "jsx" }),
+	ts: javascriptParser.configure({ dialects: "ts" }),
+	tsx: javascriptParser.configure({ dialects: "ts jsx" }),
+	json: jsonParser,
 }
 
 const code = `function foo(a, b) {
@@ -19,7 +27,7 @@ const code = `function foo(a, b) {
 const App: React.FC<{}> = ({}) => (
 	<Parsers.Provider value={parsers}>
 		<h1>Hello world</h1>
-		<Code language="javascript" source={source} />
+		<Code language="js" source={source} />
 	</Parsers.Provider>
 )
 

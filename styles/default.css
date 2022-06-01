@@ -1,0 +1,83 @@
+.tok-link {
+	text-decoration: underline;
+}
+
+.tok-heading {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.tok-emphasis {
+	font-size: italic;
+}
+
+.tok-strong {
+	font-weight: bold;
+}
+
+.tok-strikethrough {
+	text-decoration: line-through;
+}
+
+.tok-keyword {
+	color: #708;
+}
+
+.tok-atom,
+.tok-bool,
+.tok-url,
+.tok-labelName {
+	color: #219;
+}
+
+.tok-literal,
+.tok-inserted {
+	color: #164;
+}
+
+.tok-string,
+.tok-deleted {
+	color: #a11;
+}
+
+.tok-string2 {
+	color: #e40;
+}
+
+.tok-variableName.tok-definition {
+	color: #00f;
+}
+
+.tok-variableName.tok-local {
+	color: #30a;
+}
+
+.tok-variableName2,
+.tok-macroName {
+	color: #256;
+}
+
+.tok-typeName,
+.tok-namespace {
+	color: #085;
+}
+
+.tok-className {
+	color: #167;
+}
+
+.tok-propertyName.tok-definition {
+	color: #00c;
+}
+
+.tok-comment {
+	color: #940;
+}
+
+.tok-meta {
+	color: #7a757a;
+}
+
+.tok-invalid {
+	color: #f00;
+}
