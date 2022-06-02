@@ -72,7 +72,7 @@ declare const Code: React.FC<CodeProps>
 
 ## Contributing
 
-react-lezer-highlighter is meant to be a proof-of-concept reference implementation - it's only 30 lines and it's unlikely that I'll want to add new features to it. I'll publish new versions to track with Lezer, but am not looking for outside contributions.
+react-lezer-highlighter is meant to be a proof-of-concept reference implementation - after all, it's only 30 lines of code. I'll publish new versions to track with Lezer, and would accept PRs for additional stylesheets in `styles/` if people want to create them, but it's unlikely that I want to add new features or change the basic interface.
 
 ## License
 
