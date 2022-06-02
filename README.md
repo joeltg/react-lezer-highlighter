@@ -47,7 +47,7 @@ const source = `function norm(a: number, b: number): number {
 const root = createRoot(document.getElementById("root"))
 root.render(
 	<Parsers.Provider value={parsers}>
-		<Code language="js" source={source} />
+		<Code language="ts" source={source} />
 	</Parsers.Provider>
 )
 ```
