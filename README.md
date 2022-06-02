@@ -1,5 +1,25 @@
 # react-lezer-highlighter
 
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme) [![license](https://img.shields.io/github/license/joeltg/react-lezer-highlighter)](https://opensource.org/licenses/MIT) [![NPM version](https://img.shields.io/npm/v/react-lezer-highlighter)](https://www.npmjs.com/package/react-lezer-highlighter) ![TypeScript types](https://img.shields.io/npm/types/react-lezer-highlighter) ![lines of code](https://img.shields.io/tokei/lines/github/joeltg/react-lezer-highlighter)
+
+A tiny syntax highlighter for React using Lezer parsers.
+
+## Table of contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [API](#api)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Install
+
+```
+npm i react-lezer-highlighter
+```
+
+## Usage
+
 ```tsx
 import React from "react"
 import { createRoot } from "react-dom/client"
@@ -17,20 +37,43 @@ const parsers = {
 	ts: javascriptParser.configure({ dialects: "ts" }),
 	tsx: javascriptParser.configure({ dialects: "ts jsx" }),
 	json: jsonParser,
+	// ... import and add more languages as you see fit
 }
 
-const source = `function foo(a, b) {
-	return a + b
-}
-`
+const source = `function norm(a: number, b: number): number {
+	return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+}`
 
-const App: React.FC<{}> = ({}) => (
+const root = createRoot(document.getElementById("root"))
+root.render(
 	<Parsers.Provider value={parsers}>
-		<h1>Hello world</h1>
 		<Code language="js" source={source} />
 	</Parsers.Provider>
 )
-
-const root = createRoot(document.getElementById("root"))
-root.render(<App />)
 ```
+
+![](./example.png)
+
+## API
+
+```ts
+import type React from "react"
+import type { LRParser } from "@lezer/lr"
+
+declare const Parsers: React.Context<Record<string, LRParser>>
+
+declare interface CodeProps {
+	language?: string
+	source: string
+}
+
+declare const Code: React.FC<CodeProps>
+```
+
+## Contributing
+
+react-lezer-highlighter is meant to be a proof-of-concept reference implementation - it's only 30 lines and it's unlikely that I'll want to add new features to it. I'll publish new versions to track with Lezer, but am not looking for outside contributions.
+
+## License
+
+MIT (c) 2022 Joel Gustafson
