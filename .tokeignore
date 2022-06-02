@@ -3,4 +3,4 @@ LICENSE
 package.json
 package-lock.json
 tsconfig.json
-styles
+styles/
