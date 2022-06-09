@@ -4,6 +4,8 @@
 
 A tiny syntax highlighter for React using Lezer parsers.
 
+Background, motivation, and design of this library is covered in [this blog post](https://joelgustafson.com/posts/2022-05-31/syntax-highlighting-on-the-web).
+
 ## Table of contents
 
 - [Install](#install)
