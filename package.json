@@ -1,6 +1,6 @@
 {
 	"name": "react-lezer-highlighter",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A tiny syntax highlighter for React using Lezer parsers",
 	"type": "module",
 	"main": "lib/index.js",
