@@ -2,7 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme) [![license](https://img.shields.io/github/license/joeltg/react-lezer-highlighter)](https://opensource.org/licenses/MIT) [![NPM version](https://img.shields.io/npm/v/react-lezer-highlighter)](https://www.npmjs.com/package/react-lezer-highlighter) ![TypeScript types](https://img.shields.io/npm/types/react-lezer-highlighter)
 
-A tiny syntax highlighter for React using Lezer parsers.
+A simple tiny syntax highlighter for React using [Lezer](https://lezer.codemirror.net/) parsers.
 
 Background, motivation, and design of this library is covered in [this blog post](https://joelgustafson.com/posts/2022-05-31/syntax-highlighting-on-the-web).
 
@@ -78,4 +78,4 @@ react-lezer-highlighter is meant to be a proof-of-concept reference implementati
 
 ## License
 
-MIT (c) 2022 Joel Gustafson
+MIT (c) 2024 Joel Gustafson
