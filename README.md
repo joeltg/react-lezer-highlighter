@@ -1,6 +1,6 @@
 # react-lezer-highlighter
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme) [![license](https://img.shields.io/github/license/joeltg/react-lezer-highlighter)](https://opensource.org/licenses/MIT) [![NPM version](https://img.shields.io/npm/v/react-lezer-highlighter)](https://www.npmjs.com/package/react-lezer-highlighter) ![TypeScript types](https://img.shields.io/npm/types/react-lezer-highlighter) ![lines of code](https://img.shields.io/tokei/lines/github/joeltg/react-lezer-highlighter)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme) [![license](https://img.shields.io/github/license/joeltg/react-lezer-highlighter)](https://opensource.org/licenses/MIT) [![NPM version](https://img.shields.io/npm/v/react-lezer-highlighter)](https://www.npmjs.com/package/react-lezer-highlighter) ![TypeScript types](https://img.shields.io/npm/types/react-lezer-highlighter)
 
 A tiny syntax highlighter for React using Lezer parsers.
 
