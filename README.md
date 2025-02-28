@@ -65,8 +65,9 @@ import type { LRParser } from "@lezer/lr";
 declare const Parsers: React.Context<Record<string, LRParser>>;
 
 declare interface CodeProps {
-  language?: string;
   source: string;
+  language?: string;
+  className?: string | ((language?: string) => string);
 }
 
 declare const Code: React.FC<CodeProps>;
