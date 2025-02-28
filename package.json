@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "dev": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,14 +26,16 @@
   "homepage": "https://github.com/joeltg/react-lezer-highlighter#readme",
   "dependencies": {
     "@lezer/lr": "^1.4.2",
-    "hast-util-from-lezer": "^0.5.3",
-    "hast-util-to-jsx-runtime": "^2.3.0"
+    "hast-util-from-lezer": "^0.5.4",
+    "hast-util-to-jsx-runtime": "^2.3.5"
   },
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "@types/react": "^19.0.10",
+    "react": "^19.0.0",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "@types/react": "^18.3.4",
-    "react": "^18.3.1"
+    "@types/react": "18.x || 19.x",
+    "react": "18.x || 19.x"
   }
 }

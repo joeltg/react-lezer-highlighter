@@ -23,35 +23,35 @@ npm i react-lezer-highlighter
 ## Usage
 
 ```tsx
-import React from "react"
-import { createRoot } from "react-dom/client"
+import React from "react";
+import { createRoot } from "react-dom/client";
 
-import { Code, Parsers } from "react-lezer-highlighter"
+import { Code, Parsers } from "react-lezer-highlighter";
 
-import { parser as javascriptParser } from "@lezer/javascript"
-import { parser as jsonParser } from "@lezer/json"
+import { parser as javascriptParser } from "@lezer/javascript";
+import { parser as jsonParser } from "@lezer/json";
 
-import "react-lezer-highlighter/styles/default.css"
+import "react-lezer-highlighter/styles/default.css";
 
 const parsers = {
-	js: javascriptParser,
-	jsx: javascriptParser.configure({ dialects: "jsx" }),
-	ts: javascriptParser.configure({ dialects: "ts" }),
-	tsx: javascriptParser.configure({ dialects: "ts jsx" }),
-	json: jsonParser,
-	// ... import and add more languages as you see fit
-}
+  js: javascriptParser,
+  jsx: javascriptParser.configure({ dialects: "jsx" }),
+  ts: javascriptParser.configure({ dialects: "ts" }),
+  tsx: javascriptParser.configure({ dialects: "ts jsx" }),
+  json: jsonParser,
+  // ... import and add more languages as you see fit
+};
 
 const source = `function norm(a: number, b: number): number {
 	return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
-}`
+}`;
 
-const root = createRoot(document.getElementById("root"))
+const root = createRoot(document.getElementById("root"));
 root.render(
-	<Parsers.Provider value={parsers}>
-		<Code language="ts" source={source} />
-	</Parsers.Provider>
-)
+  <Parsers.Provider value={parsers}>
+    <Code language="ts" source={source} />
+  </Parsers.Provider>,
+);
 ```
 
 ![](./example.png)
@@ -59,17 +59,17 @@ root.render(
 ## API
 
 ```ts
-import type React from "react"
-import type { LRParser } from "@lezer/lr"
+import type React from "react";
+import type { LRParser } from "@lezer/lr";
 
-declare const Parsers: React.Context<Record<string, LRParser>>
+declare const Parsers: React.Context<Record<string, LRParser>>;
 
 declare interface CodeProps {
-	language?: string
-	source: string
+  language?: string;
+  source: string;
 }
 
-declare const Code: React.FC<CodeProps>
+declare const Code: React.FC<CodeProps>;
 ```
 
 ## Contributing
