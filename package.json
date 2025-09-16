@@ -27,12 +27,12 @@
   "dependencies": {
     "@lezer/lr": "^1.4.2",
     "hast-util-from-lezer": "^0.5.4",
-    "hast-util-to-jsx-runtime": "^2.3.5"
+    "hast-util-to-jsx-runtime": "^2.3.6"
   },
   "devDependencies": {
-    "@types/react": "^19.0.10",
-    "react": "^19.0.0",
-    "typescript": "^5.7.3"
+    "@types/react": "^19.1.13",
+    "react": "^19.1.1",
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "@types/react": "18.x || 19.x",
